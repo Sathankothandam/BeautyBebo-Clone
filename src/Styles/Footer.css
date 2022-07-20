@@ -1,0 +1,23 @@
+.Footer_main{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    border: 1px solid grey;
+    padding:  20px 50px;
+    background-color: rgb(167, 164, 164);
+    
+}
+.Footer_main h3{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.Footer_main li{
+   margin-top: 15px;
+   list-style: square;
+}
+.Footer_main li:hover{
+   color:  #dd0285;
+   cursor: pointer;
+ }
