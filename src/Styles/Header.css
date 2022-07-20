@@ -1,0 +1,64 @@
+.Header_Main{
+    /* border: 1px solid grey; */
+    height: 200px;
+    width: 100%;
+}
+.top_add{
+    /* border: 1px solid grey; */
+    height: 29%;
+}
+.Center_part{
+    /* border: 1px solid grey; */
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    /* box-sizing: border-box; */
+}
+.Center_part>div{
+   width: 32%;
+}
+.search_bar input{
+   width: 70%;
+   padding: 10px ;
+   border: 0.5px solid rgb(226, 223, 223);
+}
+.search_bar input:focus{
+   outline: none;
+ }
+.search_bar button{
+    padding: 10px 20px;
+    margin-left: -3px;
+    background-color: #dd0285;
+    border: 0.5px solid  #dd0285;
+    color: white;
+ }
+.Roure_part{
+    /* border: 1px solid grey; */
+    height: 29%;
+}
+.login_logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Roure_part{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #dd0285;
+    align-items: center;
+}
+.Roure_part>div{
+    /* height: 100%; */
+    padding: 0px 25px;
+    border: 0.3px;
+    color: white;
+}
+.Roure_part>div:hover{
+    /* height: 100%; */
+  background-color: #c20576;
+  cursor: pointer;
+}
