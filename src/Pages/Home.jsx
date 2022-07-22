@@ -3,7 +3,8 @@ import '../Styles/Home.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className='Home_main'>
+        <div style={{width:'100%', height:'220px'}}> </div>
         <img src="https://www.beautybebo.com/pub/media/blue_heaven.jpg" alt="" style={{margin:'auto'}} />
         <div className='slide_prod'>
             <div>
