@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../Styles/Header.css'
 import Account from './Account'
 import Darkmode from './Darkmode'
-const Header = () => {
+const Header = ({cartitems}) => {
   return (
     <div className='Header_Main'>
       <div className='top_add'>
@@ -19,7 +19,6 @@ const Header = () => {
         </div>
         <div className='login_logo'>
                <div className='acc_icon'>
-                {/* <i class="fa-solid fa-user"></i> */}
                 <Account/>
                 </div>
                <div>
@@ -38,7 +37,9 @@ const Header = () => {
         <Link to='/products'><h4>PERSIONAL CARE</h4></Link></div>
         <div>
         <Link to='/products'><h4>FRAGRANCE</h4></Link></div>
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <Link to='/cart'>
+        <div><i class="fa-solid fa-cart-shopping" style={{color:"white"}}>  ( {cartitems.length} )</i></div>
+        </Link>
       </div>
     </div>
   )

@@ -2,10 +2,17 @@
     /* border: 1px solid grey; */
     height: 200px;
     width: 100%;
+    /* margin-bottom: 300px; */
+    top: 0;
+    position: fixed;
 }
 .top_add{
     /* border: 1px solid grey; */
     height: 29%;
+}
+.top_add img{
+   height: 100%;
+   width: 100%;
 }
 .Center_part{
     /* border: 1px solid grey; */
@@ -14,6 +21,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 40px;
+    background-color: white;
     /* box-sizing: border-box; */
 }
 .Center_part>div{
@@ -59,6 +67,6 @@
 }
 .Roure_part>div:hover{
     /* height: 100%; */
-  background-color: #c20576;
+  background-color: #c7097b;
   cursor: pointer;
 }
