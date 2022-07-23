@@ -1,0 +1,35 @@
+.Checkout_main{
+    border: 0.5px solid;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.top_address{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid;
+}
+.top_address button{
+    border: 0.5px solid;
+    padding: 7px 60px;
+    background-color: black;
+    color: white;
+}
+.card_details input{
+    height: 20px;
+    width: 80%;
+    border: 0.5px solid;
+    padding: 15px 2px;
+    margin-top: 15px;
+}
+.card_details button{
+    padding: 7px 60px;
+    background-color: black;
+    color: white;
+    border: 0.5px solid;
+    margin-top: 15px;
+}

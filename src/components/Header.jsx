@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import '../Styles/Header.css'
 import Account from './Account'
 import Darkmode from './Darkmode'
-const Header = ({cartitems}) => {
+const Header = ({cartitems,handleChange}) => {
   return (
     <div className='Header_Main'>
       <div className='top_add'>
@@ -14,7 +14,9 @@ const Header = ({cartitems}) => {
             <Link to='/'><img src="https://www.beautybebo.com/pub/media/logo/default/beautybebo_1.png" alt="Brand_logo" /></Link>
         </div>
         <div className='search_bar'>
-             <input type="text" placeholder='Enter your search...'/>
+             <input type="text" placeholder='Enter your search...'
+              onChange={handleChange}
+             />
              <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div className='login_logo'>

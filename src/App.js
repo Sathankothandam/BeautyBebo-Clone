@@ -6,9 +6,36 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ScrollTop from './components/ScrollTop';
+// import axios from 'axios';
 // import Cart from './Pages/Cart';
  const localstorages = JSON.parse(localStorage.getItem("cart") || "[]")
 function App() {
+  // ***************************************
+      // const [prod,setProd] = useState([])
+      const [search,setSearch] = useState("")
+
+      // useEffect(()=>{
+      //    axios.get("http://localhost:8080/products")
+      //    .then(res=>{
+      //     setProd(res.data)
+      //     console.log(prod)
+      //    })
+      //    .catch(err=>{
+      //     console.log(err)
+      //    })
+        //  console.log(prod)
+      // },[])
+
+      // const filterProducts = prod.filter(items =>{
+      //  return items.title.toLowercase().includes( search.toLowerCase() )
+      // })
+
+       const handleChange = (e)=>{
+             setSearch(e.target.value)
+            //  console.log(search)
+       }
+
+  // **************************************
   const [cart,setCart] = useState(localstorages)
 
   useEffect(()=>{
@@ -40,9 +67,9 @@ function App() {
   }
   return (
     <div className="App">
-      <Header cartitems={cart}/>
+      <Header cartitems={cart} handleChange={handleChange}/>
       <ScrollTop/>
-      <Routers cartitems={cart} handleAddproduct={handleAddproduct} handleRemoveproduct={handleRemoveproduct}/>
+      <Routers search={search}  cartitems={cart} handleAddproduct={handleAddproduct} handleRemoveproduct={handleRemoveproduct}/>
       <Footer/>
     </div>
   );
