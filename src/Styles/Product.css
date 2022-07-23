@@ -20,6 +20,15 @@
    border-bottom: 0.5px solid rgb(197, 196, 196);
     width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 20px;
+}
+.pagination_div button{
+    padding: 2px 5px;
+    border: none;
+    background-color: #dd0285 ;
 }
 .Product_append_div{
     display: grid;

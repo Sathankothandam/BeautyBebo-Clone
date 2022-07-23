@@ -23,9 +23,11 @@ const Account = () => {
         <Text fontSize='2xl'>Login</Text>
     </Box>
     </Link>
+    <Link to='/signup'>
     <Box cursor='pointer' >
         <Text fontSize='2xl'>Register</Text>
     </Box>
+    </Link>
   </MenuList>
 </Menu>
     </div>
