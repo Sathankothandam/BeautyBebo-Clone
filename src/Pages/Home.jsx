@@ -1,12 +1,14 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import '../Styles/Home.css'
 
 const Home = () => {
+    const navigate = useNavigate()
   return (
     <div className='Home_main'>
         <div style={{width:'100%', height:'220px'}}> </div>
         <img src="https://www.beautybebo.com/pub/media/blue_heaven.jpg" alt="" style={{margin:'auto'}} />
-        <div className='slide_prod'>
+        <div className='slide_prod' onClick={()=>{navigate('/products')}}>
             <div>
                 <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/8/9/8904311901495_1_1_.jpg" alt="" />
                 <p>SPF50 Lotion</p>
@@ -40,7 +42,7 @@ const Home = () => {
                 <img src="https://www.beautybebo.com/pub/media/mega-menu/lotus.jpg" alt="" />
             </div>
         </div>
-        <div className='image_routes'>
+        <div className='image_routes'onClick={()=>{navigate('/products')}}>
             <div>
                 <img src="https://www.beautybebo.com/pub/media/catalog/category/makeup_1.png" alt="" />
                 <p>Makeup</p>
@@ -71,7 +73,7 @@ const Home = () => {
             </div>
         </div>
         <img src="https://www.beautybebo.com/pub/media/mega-menu/homepage.jpg" alt="" style={{margin:'auto' , marginBottom:'30px'}} />
-        <div className='slide_prod'>
+        <div className='slide_prod' onClick={()=>{navigate('/products')}}>
             <div>
                 <img src="https://www.beautybebo.com/pub/media/catalog/product/cache/37253e89591b79b38c00254331932999/4/c/4ca14ce8906087779124_7_.jpg" alt="" />
                 <p>SPF50 Lotion</p>
@@ -97,7 +99,7 @@ const Home = () => {
                 <button>Add To Cart</button>
             </div>
         </div>
-        <img src="https://www.beautybebo.com/pub/media/mega-menu/offer.gif" alt="" style={{margin:'auto' , marginBottom:'30px'}} />
+        <img onClick={()=>{navigate('/products')}} src="https://www.beautybebo.com/pub/media/mega-menu/offer.gif" alt="" style={{margin:'auto' , marginBottom:'30px'}} />
         <div>
             <h2 style={{fontSize:'15px', fontWeight:'bold', marginBottom:'20px'}}>
             Welcome to Beauty Products Online Shopping India- Beauty Bebo
